@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Critics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="games.ico">
+    <link rel="stylesheet" href="colors.css">
+</head>
+
+<body>
+    <h1>Welcome to Game Critics</h1>
+    <div id="cont"> <label id="la" for="favgame">Favourtie Game</label> <i class="fa fa-gamepad icon"></i>
+        <input type="text" id="favgame" list="favgames">
+    </div>
+    <form action="form.html"> <input type="submit" id="back" value=" Sign Up"></form>
+    <datalist id="favgames">
+        <option value="God of War">God of War</option>
+        <option value="Ghost of Tsushima">Ghost of Tsushima</option>
+        <option value="Deadpool">Deadpool</option>
+        <option value="CyberPunk">CyberPunk</option>
+        <option value="Tomb Raider">Tomb Raider</option>
+        <option value="Far Cry 3">Far Cry 3</option>
+        <option value="Spiderman">Spiderman</option>
+        <option value="Watch Dogs">Watch Dogs</option>
+        <option value="Halo 4">Halo 4</option>
+        <option value="Uncharted 4">Uncharted 4</option>
+        <option value="Call of Duty">Call of Duty</option>
+        <option value="Borderlands">Borderlands</option>
+        <option value="GTA V">GTA V</option>
+        <option value="UFC">UFC</option>
+        <option value="Elden Rings">Elden Rings</option>
+        <option value="FIFA 23">FIFA 23</option>
+        <option value="Hitman 3">Hitman 3</option>
+        <option value="Red Dead Redemption">Red Dead Redemption</option>
+    </datalist>
+    <p id="des">This is the official Game Critics Website. We provide our customers with an interface to rate games
+        however they
+        like</p>
+    <h3>Check out some of the hot games!</h3>
+    <div id="genres">
+        <ul>
+            <button class="btn">
+                <li><a href="#Far"> <span class="tran">Ghost of Tsushima</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#dp"><span class="tran"> Deadpool</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#cyber"><span class="tran"> CyberPunk</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#tomb"><span class="tran"> Tomb Raider</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#Far"><span class="tran"> Far Cry 3</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#spider"><span class="tran"> Spiderman</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#gow"><span class="tran"> God of War</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#sd"><span class="tran"> Watch Dogs</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#halo"><span class="tran"> Halo 4</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#uc"><span class="tran"> Uncharted 4</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#cod"><span class="tran"> Call of Duty</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#bd"><span class="tran"> Borderlands</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#gta"><span class="tran"> GTA V</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#ufc"><span class="tran"> UFC</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#er"><span class="tran"> Elden Rings</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#fifa"><span class="tran"> FIFA 23</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#hit"><span class="tran"> Hitman 3</a></span></li>
+            </button>
+            <button class="btn">
+                <li><a href="#fifa"><span class="tran"> Red Dead Redemption</a></span></li>
+            </button>
+        </ul>
+    </div>
+    <div class="games">
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/god-of-war-ragnarok/"><img
+                    src="goww.jpg" alt="God of War" id="gow"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/far-cry-3-classic-edition/"><img
+                    src="far cry3.jpg" alt="Far Cry 3" id="Far"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a
+                href="https://www.playstation.com/en-in/games/rise-of-the-tomb-raider-20-year-celebration/"><img
+                    src="tomb raider.jpg" alt="Tomb Raider" id="tomb"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/marvels-spider-man-remastered/"><img
+                    src="spiderman.jpg" alt="Spiderman" id="spider"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/watch-dogs/"><img src="watch dogs.jpg"
+                    alt="Watch Dogs" id="wd"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.xbox.com/en-in/games/store/halo-4/9p8cfxzh93ck"><img
+                    src="halo 4.jpg" alt="Halo 4" id="halo"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/ghost-of-tsushima/"><img src="got.jpg"
+                    alt="Ghost of Tsushima" id="got"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.xbox.com/en-in/games/store/deadpool/bw7dlwsnmwpz"><img
+                    src="deadpool.jpg" alt="Deadpool" id="dp"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/uncharted-4-a-thiefs-end/"><img
+                    src="uncharted.jpg" alt="Uncharted 4" id="uc"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/call-of-duty-black-ops-iii/"><img
+                    src="cod.jpg" alt="Call of Duty" id="cod"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/borderlands-2-vr/"><img
+                    src="borderlands.jpg" alt="BorderLands" id="bd"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/grand-theft-auto-v/"><img src="gta.jpg"
+                    alt="GTA V" id="gta"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/ea-sports-ufc/"><img src="ufc.jpg"
+                    alt="UFC" id="ufc"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/elden-ring/"><img src="elden rings.jpg"
+                    alt="Elden Rings" id="er"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/ea-sports-fifa-23/"><img src="fifa.jpg"
+                    alt="FIFA 23" id="fifa"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/hitman-3/"><img src="hitman.jpg"
+                    alt="Hitman 3" id="hit"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/red-dead-redemption-2/"><img
+                    src="rdr.jpg" alt="Red Dead Redemption" id="rdr"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+        <div class="gameimage"><a href="https://www.playstation.com/en-in/games/cyberpunk-2077/"><img src="cyber.jpg"
+                    alt="CyberPunk" id="cyber"></a>
+            <details>
+                <summary>See More</summary>
+                <p>Rate the Game from 1-10</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output></output>
+                </div>
+                <div class="additonal"><label for="add">Additional Comments:</label><br>
+                    <textarea name="add" class="add" cols="30" rows="2"></textarea>
+                </div>
+            </details>
+        </div>
+    </div>
+    <footer>
+        <p id="foot">&copy; All Rights Reserved 2024</p>
+    </footer>
+</body>
+
+</html>

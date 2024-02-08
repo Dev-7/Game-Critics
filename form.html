@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" href="form.ico">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 770px;
+            background-image: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(6, 154, 88, 0.973)),
+                url("back.jpg");
+        }
+
+        form {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            margin: 5px;
+            background-color: aliceblue;
+            border-radius: 25px;
+        }
+
+
+        select {
+            cursor: pointer;
+            width: 150px;
+            height: 40px;
+            background: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(6, 154, 88, 0.973));
+            border-radius: 27px;
+            border: 2px solid black;
+            color: whitesmoke;
+        }
+
+        select option {
+            background-color: rgba(206, 60, 148, 0.782);
+            color: whitesmoke;
+        }
+
+        #formbox {
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        input[type="text"] {
+            border-radius: 5px;
+            border: 1px solid black;
+            outline: none;
+            width: 250px;
+            height: 20px;
+            margin-bottom: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        input[type="password"] {
+            border-radius: 5px;
+            border: 1px solid black;
+            outline: none;
+            width: 228px;
+            height: 20px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #email {
+            border-radius: 5px;
+            border: 1px solid black;
+            outline: none;
+            width: 250px;
+            height: 20px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #sub {
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border: 1.5px solid rgba(6, 154, 88, 0.973);
+            background-color: rgba(6, 154, 88, 0.973);
+            height: 30px;
+            width: 100px;
+            position: relative;
+            left: 40px;
+            top: 20px;
+            color: whitesmoke;
+            font-size: medium;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        #res {
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border: 1.5px rgba(6, 154, 88, 0.973);
+            background-color: rgba(6, 154, 88, 0.973);
+            height: 30px;
+            width: 100px;
+            position: relative;
+            left: 180px;
+            bottom: 20.5px;
+            color: whitesmoke;
+            font-size: medium;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="formbox">
+        <form action="presentation.html">
+            <div><label for="name">Name:</label> <input type="text" id="name" required></div>
+            <div><label for="email">Email:</label> <input type="email" id="email" required></div>
+            <div><label for="pwd">Password:</label> <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}"
+                    title="Atleast 8 chars. required, 1 uppercase and 1 digit" id="pwd" required></div>
+            <br>
+            <div><label for="gender">Gender:</label> </div>
+            <div><label for="male">Male</label> <input type="radio" name="gender" id="male" required></div>
+            <div><label for="female">Female</label> <input type="radio" name="gender" id="female"></div>
+            <div><label for="other">Other</label> <input type="radio" name="gender" id="other"></div>
+            <br>
+            <label>Gaming Platforms you use/own:</label>
+            <div><label for="xbox">XBOX</label> <input type="checkbox" name="pl" id="xbox"></div>
+            <div><label for="ps">PlayStation</label><input type="checkbox" name="pl" id="ps"></div>
+            <div><label for="pc">Personal Computer/Laptop</label><input type="checkbox" name="pl" id="pc"></div>
+            <div><label for="nin">Nintendo</label><input type="checkbox" name="pl" id="nin"></div>
+            <br>
+            <div id="sel">
+                <label for="fav">Favourtie Gaming Platform:</label>
+                <select name="fav" id="fav">
+                    <option value="na">I dont like playing games/ I'm a nerd</option>
+                    <option value="XBOX">XBOX</option>
+                    <option value="PS">PlayStation</option>
+                    <option value="PC">Personal Computer/Laptop</option>
+                    <option value="Nint">Nintendo</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="Submit" id="sub"><input type="reset" value="Clear" id="res">
+        </form>
+    </div>
+</body>
+
+</html>
