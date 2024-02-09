@@ -2,6 +2,7 @@ body {
     overflow-x: hidden;
     background: url(layered-waves-haikei.png);
     object-fit: contain;
+    display: flexbox;
 }
 
 p {
@@ -117,7 +118,6 @@ label {
     position: relative;
     left: 4px;
     top: 1.8px;
-    display: inline-block;
 }
 
 input[type="text"] {
