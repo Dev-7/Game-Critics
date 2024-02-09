@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
     background: url(layered-waves-haikei.png);
     object-fit: contain;
-    display: flexbox;
+    display: flex;
 }
 
 p {
