@@ -1,62 +1,163 @@
-/* Ensure the body does not have flex applied */
 body {
     overflow-x: hidden;
-    background: url(layered-waves-haikei.png) no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
+    background: url(layered-waves-haikei.png);
+    object-fit: contain;
+    display: flexbox;
 }
 
-/* Ensuring text elements are properly aligned */
-h1, h3, p, details {
+p {
+    color: whitesmoke;
+    font-size: large;
+}
+
+h1 {
     color: whitesmoke;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-/* Proper flexbox settings for game container */
+h3 {
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+details {
+    color: whitesmoke;
+}
+
 .games {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centers items inside */
-    gap: 20px;
-    padding: 20px;
 }
 
-/* Fixing image alignment */
 img {
     border-radius: 15px;
-    margin: 0.7rem;
-    display: block;
-    max-width: 100%;
-    height: auto;
+    margin-left: 0.7rem;
+    margin-top: 0.7rem;
 }
 
-/* Game image alignment fixes */
+
 .gameimage {
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 20px;
+    margin-right: 20px;
     border: 3px solid whitesmoke;
     border-radius: 10px;
     opacity: 0.8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Fixing the flexbox layout of the navbar (if any) */
+.gameimage:hover {
+    opacity: 1;
+    box-shadow: whitesmoke 0px 50px 55px, whitesmoke 0px -25px 45px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, whitesmoke 0px -3px 5px;
+}
+
+.slider {
+    background-color: rgb(96, 230, 165);
+    width: 190px;
+    height: 5px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    cursor: grab;
+}
+
+textarea {
+    outline: none;
+}
+
+textarea:focus {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -25px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.slidecontainer {
+    background-color: gray;
+    height: 40px;
+    width: 215px;
+    padding-top: 20px;
+    padding-left: 7px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+output {
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+#des {
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+
+label {
+    color: whitesmoke;
+    font-size: large;
+}
+
+#la {
+    margin-right: 10px;
+}
+
+.icon {
+    padding: 5px;
+    background: rgb(182, 71, 11);
+    color: white;
+    width: 17px;
+    height: 13px;
+    position: relative;
+    display: inline-block;
+    left: 4px;
+    top: 1.8px;
+}
+
+input[type="text"] {
+    outline: none;
+    border: none;
+    height: 20px;
+}
+
+#back {
+    float: right;
+    position: relative;
+    bottom: 30px;
+    border-radius: 10px;
+    width: 95px;
+    height: 30px;
+    font-size: medium;
+    background-color: rgb(241, 75, 9);
+    border: 1px solid whitesmoke;
+    opacity: 0.7;
+    color: whitesmoke;
+}
+
+#back:hover {
+    opacity: 1;
+}
+
+.btn {
+    color: whitesmoke;
+    background: linear-gradient(225deg, #FF3CAC, #784BA0, #2B86C5);
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    padding: 7px;
+}
+
 ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centers nav links */
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
+    gap: 5rem;
 }
 
 ul li a {
@@ -66,34 +167,28 @@ ul li a {
     font-weight: 600;
 }
 
-/* Button styling */
-.btn {
-    color: whitesmoke;
-    background: linear-gradient(225deg, #FF3CAC, #784BA0, #2B86C5);
-    border-radius: 20px;
-    border: 1px solid whitesmoke;
-    padding: 7px;
-    display: inline-block;
-    text-align: center;
-}
-
 .btn:hover {
     opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-/* Fix footer alignment */
+#genres {
+    border: 2px solid azure;
+    border-radius: 25px;
+    background: url(milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
+    box-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(182, 71, 11),
+        0 0 82px rgb(182, 71, 11),
+        0 0 92px #0fa,
+        0 0 82px rgb(182, 71, 11),
+        0 0 151px #0fa;
+}
+
 #foot {
     text-align: center;
     font-size: medium;
     padding: 20px;
-    width: 100%;
-}
-
-/* Ensure genres section is centered */
-#genres {
-    border: 2px solid azure;
-    border-radius: 25px;
-    background: url(milad-fakurian-nY14Fs8pxT8-unsplash.jpg) no-repeat center center;
-    background-size: cover;
-    text-align: center;
 }
